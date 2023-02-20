@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+nav>ul{
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
+    font-size:30px ;
+    color:whitesmoke;
+    margin-top: 20px;
+  
+  
+}
+nav>ul>.box{
+    /* border: 2px solid; */
+    width: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    border-radius: 60%;
+    position: relative;
+}
+nav>ul>.box>.iconBox{
+    /* border: 2px solid; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    color:#F7A278;
+    font-size: 2.2rem;
+}
+
+nav>ul>.box>.iconBox:hover{
+    transform: scale(0);
+    
+}
+nav>ul>.box>.textBox{
+    /* border: 2px solid; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    text-transform:capitalize;
+    font-size: 1.3rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+nav>ul>.box>.textBox>a{
+    color:#682807;
+}
+
+nav>ul>.box:hover .textBox{ 
+    /* border: 2px solid; */
+    transform: scale(1.1);
+  
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(135deg, #FAD7A1 10%, #E96D71 100%);
+  
+    opacity: 1;
+    border-radius: 30px;
+    transition: all 0.4s ease-in;
+}

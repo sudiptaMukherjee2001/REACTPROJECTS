@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+.news{
+    display: grid;
+  grid-template-columns: auto auto auto auto ;
+  grid-column-gap: 14px;
+    grid-row-gap: 30px;
+
+}
+.card{
+    /* border: 2px solid; */
+    width: 99%;
+}
+.card>.image>img{
+    width: 100%;
+}
+.card>.content>p{
+    text-align: start;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}

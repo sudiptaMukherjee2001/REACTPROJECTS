@@ -1,0 +1,26 @@
+.heading{
+    color: aliceblue;
+    position: relative;
+    font-size: 30px;
+}
+.box{
+  display: flex;
+  overflow-x: auto;
+}
+.box::-webkit-scrollbar{
+    display: none;
+}
+.cardImage>img{
+    height: 324px;
+    width: auto;
+    margin-right: 19px;
+    /* border-radius: 10px; */
+    transition: all ease-in-out;
+}
+.cardImage{
+   cursor: pointer;
+   transition: all 0.5s ;
+}
+.cardImage:hover{
+    transform: scale(1.1);
+}
