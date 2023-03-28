@@ -1,0 +1,14 @@
+@import "../../common/color.scss";
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 15px;
+  margin-left: 10px;
+  .shows {
+    position: absolute;
+    top: 804px;
+    font-size: 27px;
+    color: $font-secondary;
+    z-index: 10;
+  }
+}
