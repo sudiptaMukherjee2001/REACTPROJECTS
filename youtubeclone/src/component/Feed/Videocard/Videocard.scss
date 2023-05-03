@@ -1,0 +1,62 @@
+.card {
+  .image {
+    // border: 2px solid red;
+    img {
+      width: 100%;
+      height: 156px;
+      border-radius: 10px;
+    }
+  }
+  .channelLogo_VideoDescription {
+    display: flex;
+    align-items: center;
+    // border: 2px solid white;
+    column-gap: 5px;
+    .channelLogo {
+      //   border: 2px solid red;
+      width: 14%;
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+    .title_channelDetails {
+      //   border: 2px solid rgb(233, 102, 102);
+      width: 80%;
+      color: aliceblue;
+      .title {
+        // border: 2px solid white;
+        margin-bottom: 10px;
+        p {
+          font-size: 11px;
+
+          font-weight: 900;
+        }
+      }
+      .channelName {
+        display: flex;
+        column-gap: 6px;
+        p {
+          font-size: 13px;
+          color: #aba9a9;
+        }
+        button {
+          border-radius: 8px;
+          color: whitesmoke;
+          background-color: #423e3e;
+          outline: none;
+          border: none;
+          font-size: 10px;
+          text-transform: uppercase;
+          padding-inline: 5px;
+        }
+      }
+      .views_PublishedTime {
+        span {
+          font-size: 12px;
+          color: #a0a0a0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.feed {
+  // border: 2px solid rgb(244, 199, 199);
+  display: flex;
+  justify-content: space-between;
+
+  // height: 100vh;
+  .sideBar {
+    width: 18%;
+    // border: 2px solid red;
+    position: fixed;
+    top: 52px;
+    // margin-top: 90px;
+  }
+  .videoDetails {
+    // border: 2px solid pink;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+    grid-column-gap: 19px;
+    grid-row-gap: 6px;
+    margin-left: 280px;
+    margin-top: 90px;
+
+    // .div1 { grid-area: 1 / 1 / 2 / 2; }
+    // .div2 { grid-area: 1 / 2 / 2 / 3; }
+    // .div3 { grid-area: 1 / 3 / 2 / 4; }
+  }
+}
