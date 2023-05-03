@@ -1,0 +1,210 @@
+@import "../../common/Colors.scss";
+.projectCon {
+  color: $secondaryFontColor;
+  .navigateIcons {
+    // border: 2px solid red;
+    position: fixed;
+    top: 117px;
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    justify-content: center;
+    padding: 10px;
+    width: 8%;
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 44px;
+        height: 40px;
+        border-radius: 24px;
+        color: #fff;
+        font-size: 20px;
+        // border: 2px solid;
+        background-color: $secondaryBackgroundColor;
+        color: $secondaryFontColor;
+        transition: 0.9s;
+        .text {
+          visibility: hidden;
+          margin-left: 10px;
+          // font-size: 14px;
+          // font-weight: bold;
+          position: absolute;
+          top: -20px;
+        }
+
+        &:hover {
+          // a tag ke upar hover
+          width: 100px;
+
+          .text {
+            visibility: visible;
+            // border: 2px solid;
+            margin-right: 7px;
+            font-size: 24px;
+            font-weight: bold;
+            top: 4px;
+            // background-color: $cardColor;
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5d5959;
+    // margin-top: 30px;
+    font-size: 76px;
+    position: relative;
+    top: 30px;
+    letter-spacing: 5px;
+    &::before {
+      content: "PROJECTS";
+      font-size: 47px;
+      position: absolute;
+      color: #ffb400;
+      top: 9px;
+      left: 476px;
+      font-weight: 900;
+    }
+  }
+  .topBtn {
+    // border: 2px solid;
+    display: flex;
+    justify-content: center;
+    column-gap: 36px;
+    margin-top: 43px;
+    margin-left: 37px;
+
+    button {
+      padding-inline: 44px;
+      padding-block: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+  }
+  .allSkill {
+    // border: 2px solid whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    .skillCard {
+      position: relative;
+      margin-left: 159px;
+      width: 33.9%;
+      margin-top: 30px;
+      padding-block: 85px;
+      box-shadow: rgba(162, 162, 162, 0.4) 0px 2px 4px,
+        rgba(130, 128, 128, 0.3) 0px 7px 13px -3px,
+        rgba(159, 153, 153, 0.2) 0px -3px 0px inset;
+      overflow: hidden;
+      border-radius: 10px;
+      background-color: $cardColor;
+      cursor: pointer;
+
+      .hoverDiv {
+        background-color: $cardHoverColor;
+        position: absolute;
+        top: -100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        visibility: hidden;
+        transition: 2s;
+        backdrop-filter: blur(8px);
+
+        .techStack {
+          display: flex;
+          align-items: center;
+          column-gap: 11px;
+          font-size: 17px;
+          color: #252525;
+          font-weight: 900;
+          .firstSpan {
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+          }
+        }
+      }
+      &:hover .hoverDiv {
+        top: 0px;
+        visibility: visible;
+        cursor: pointer;
+      }
+      .projectName {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 426px) {
+  .projectCon {
+    // border: 2px solid;
+    .navigateIcons {
+      top: 0px;
+      left: 2px;
+      flex-direction: row;
+      width: 99%;
+      padding: 20px;
+      align-items: center;
+      height: 0px;
+      padding: 22px;
+      z-index: 2;
+      background-color: $primaryBackgourdColor;
+    }
+    h1 {
+      font-size: 45px;
+      top: 64px;
+      &::before {
+        left: 122px;
+        font-size: 27px;
+        top: 11px;
+      }
+    }
+    .topBtn {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 4fr) 1fr;
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      margin-left: 0px;
+      padding: 20px;
+      margin-top: 85px;
+      button {
+        padding-inline: 30px;
+        padding-block: 13px;
+        font-size: 15px;
+      }
+    }
+    .allSkill {
+      margin-top: -54px;
+      .skillCard {
+        width: 75%;
+        margin-left: 62px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,343 @@
+@import "../../common/Colors.scss";
+.aboutCon {
+  .navigateIcons {
+    border: 2px solid red;
+    position: fixed;
+    top: 117px;
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    justify-content: center;
+    padding: 10px;
+    width: 8%;
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 44px;
+        height: 40px;
+        border-radius: 24px;
+        color: #fff;
+        font-size: 20px;
+        // border: 2px solid;
+        background-color: $secondaryBackgroundColor;
+        color: $secondaryFontColor;
+        transition: 0.9s;
+        .text {
+          visibility: hidden;
+          margin-left: 10px;
+          // font-size: 14px;
+          // font-weight: bold;
+          position: absolute;
+          top: -20px;
+        }
+
+        &:hover {
+          // a tag ke upar hover
+          width: 100px;
+
+          .text {
+            visibility: visible;
+            // border: 2px solid;
+            margin-right: 7px;
+            font-size: 24px;
+            font-weight: bold;
+            top: 4px;
+            // background-color: $cardColor;
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5d5959;
+    // margin-top: 30px;
+    font-size: 83px;
+    position: relative;
+    top: 30px;
+    letter-spacing: 5px;
+    &::before {
+      content: "ABOUT";
+      font-size: 43px;
+      position: absolute;
+      color: #ffffff;
+      top: 20px;
+      left: 492px;
+      font-weight: 900;
+    }
+    &::after {
+      content: "ME";
+      font-size: 43px;
+      position: absolute;
+      color: #ffb400;
+      top: 20px;
+      left: 686px;
+      font-weight: 900;
+    }
+  }
+  .content {
+    border: 2px solid red;
+
+    margin-left: 107px;
+
+    .personalInfo {
+      .leftpart {
+        .details {
+          border: 2px solid green;
+          /* margin-bottom: 10px; */
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          column-gap: 62px;
+          padding: 104px;
+          align-items: end;
+          ul {
+            h3 {
+              color: $secondaryFontColor;
+              text-align: start;
+              margin-bottom: 20px;
+              font-size: 30px;
+              transform: translate(265px, -19px);
+              letter-spacing: 1px;
+              /* word-spacing: 17px; */
+              font-weight: 900;
+              span {
+                color: $primaryFontColor;
+              }
+            }
+            li {
+              //   border: 2px solid red;
+              margin-bottom: 10px;
+              color: $secondaryFontColor;
+              font-size: 28px;
+              font-weight: 700;
+            }
+          }
+          button {
+            padding-inline: 30px;
+            padding-block: 10px;
+            font-size: 14.3px;
+            // width: 50%;
+            border: 1.9px solid $secondaryBackgroundColor;
+            border-radius: 24px;
+            background-color: $buttonBackgorundColor;
+            color: $secondaryFontColor;
+          }
+        }
+      }
+    }
+    .Skill {
+      //   text-align: center;
+      margin-bottom: 20px;
+      color: $secondaryFontColor;
+      font-size: 30px;
+      transform: translate(360px, -13px);
+      display: inline-block;
+      letter-spacing: 11px;
+    }
+    .skills {
+      border: 2px solid whitesmoke;
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 40px;
+
+      .left,
+      .right {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        .html {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          span {
+            color: $secondaryFontColor;
+            font-size: 20px;
+          }
+          .outerBorder {
+            border: 2px solid rgb(255 239 239);
+            width: 311px;
+            border-radius: 20px;
+            .innerBorder {
+              border: 2px solid $secondaryBackgroundColor;
+              width: 70%;
+              border-radius: 33px;
+              background-color: $secondaryBackgroundColor;
+              text-align: center;
+              color: $secondaryFontColor;
+              font-size: 20px;
+              font-weight: 900;
+            }
+            .innerBorderOfCss {
+              border: 2px solid $secondaryBackgroundColor;
+              width: 56%;
+              border-radius: 33px;
+              background-color: $secondaryBackgroundColor;
+              text-align: center;
+              color: $secondaryFontColor;
+              font-size: 20px;
+              font-weight: 900;
+            }
+            .innerBorderOfScss {
+              border: 2px solid $secondaryBackgroundColor;
+              width: 40%;
+              border-radius: 33px;
+              background-color: $secondaryBackgroundColor;
+              text-align: center;
+              color: $secondaryFontColor;
+              font-size: 20px;
+              font-weight: 900;
+            }
+            .innerBorderOfJs {
+              border: 2px solid $secondaryBackgroundColor;
+              width: 50%;
+              border-radius: 33px;
+              background-color: $secondaryBackgroundColor;
+              text-align: center;
+              color: $secondaryFontColor;
+              font-size: 20px;
+              font-weight: 900;
+            }
+            .innerBorderOfreact {
+              border: 2px solid $secondaryBackgroundColor;
+              width: 50%;
+              border-radius: 33px;
+              background-color: $secondaryBackgroundColor;
+              text-align: center;
+              color: $secondaryFontColor;
+              font-size: 20px;
+              font-weight: 900;
+            }
+            .innerBorderofcPlus {
+              border: 2px solid $secondaryBackgroundColor;
+              width: 30%;
+              border-radius: 33px;
+              background-color: $secondaryBackgroundColor;
+              text-align: center;
+              color: $secondaryFontColor;
+              font-size: 20px;
+              font-weight: 900;
+            }
+          }
+        }
+      }
+    }
+    .study {
+      border: 2px solid wheat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        margin-bottom: 20px;
+        color: #ffffff;
+        font-size: 38px;
+        transform: translate(-65px, 82px);
+        display: inline-block;
+        letter-spacing: 7px;
+        z-index: 2;
+      }
+      img {
+        width: 74%;
+        height: 323px;
+        padding: -5px;
+        transform: translateX(-38px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .aboutCon {
+    border: 2px solid royalblue;
+    .navigateIcons {
+      top: 0px;
+      left: 2px;
+      flex-direction: row;
+      width: 99%;
+      padding: 20px;
+      align-items: center;
+      height: 0px;
+      z-index: 2;
+      background-color: $primaryBackgourdColor;
+    }
+    h1 {
+      font-size: 57px;
+      margin-top: 39px;
+      margin-bottom: 50px;
+
+      &::before {
+        left: 80px;
+        font-size: 31px;
+        top: 15px;
+      }
+      &:after {
+        left: 220px;
+        font-size: 31px;
+        top: 15px;
+      }
+    }
+    .content {
+      margin-left: 0px;
+      .personalInfo {
+        .leftpart {
+          .details {
+            padding: 0px;
+            column-gap: 10px;
+            padding: 0px;
+
+            ul {
+              padding-left: 10px;
+              h3 {
+                border: 2px solid yellow;
+                font-size: 27px;
+                text-align: center;
+                width: 180%;
+                transform: translate(0px, 0px);
+              }
+              li {
+                font-size: 15px;
+                font-weight: 600;
+              }
+            }
+            button {
+              display: none;
+            }
+          }
+        }
+      }
+      .Skill {
+        transform: translate(0px, 0px);
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        width: 98%;
+      }
+      .skills {
+        flex-direction: column;
+
+        .left,
+        .right {
+          margin-top: 20px;
+          margin-bottom: 30px;
+          .html {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
